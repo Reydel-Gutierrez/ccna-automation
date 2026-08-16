@@ -1,0 +1,16 @@
+# Git lab notes (exam 1.7, 1.8, 5.12)
+# Full command walkthrough is in CCNAAUTO_LAB_SETUP.md and the study guide (1.8).
+#
+# Goal: practice clone, add, commit, branch, merge, conflict, diff, push/pull
+# using a private GitHub repo. Do not store API keys in Git.
+
+git_workflow_checklist:
+  - git clone
+  - git status
+  - git add / git rm
+  - git commit
+  - git branch / git switch
+  - git merge
+  - resolve a conflict
+  - git diff / git diff --stat
+  - git push / git pull

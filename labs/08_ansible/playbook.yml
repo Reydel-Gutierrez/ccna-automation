@@ -1,0 +1,35 @@
+# Exam 5.8 — Interpret this playbook.
+# Ansible is declarative and (when modules are written correctly) idempotent.
+
+- name: Prepare a lab linux host
+  hosts: lab
+  become: true
+  vars:
+    lab_user: ccnaauto
+    app_package: nginx
+
+  tasks:
+    - name: Ensure nginx is installed
+      ansible.builtin.package:
+        name: "{{ app_package }}"
+        state: present
+
+    - name: Create application user
+      ansible.builtin.user:
+        name: "{{ lab_user }}"
+        shell: /bin/bash
+        state: present
+        create_home: true
+
+    - name: Deploy a simple index page
+      ansible.builtin.copy:
+        dest: /var/www/html/index.html
+        content: |
+          CCNA Automation Ansible lab
+        mode: "0644"
+
+    - name: Start and enable nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true

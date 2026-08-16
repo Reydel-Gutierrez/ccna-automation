@@ -1,0 +1,19 @@
+{
+  "ietf-interfaces:interfaces": {
+    "interface": [
+      {
+        "name": "GigabitEthernet1",
+        "description": "MANAGEMENT",
+        "enabled": true,
+        "ietf-ip:ipv4": {
+          "address": [
+            {
+              "ip": "10.10.20.48",
+              "netmask": "255.255.255.0"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

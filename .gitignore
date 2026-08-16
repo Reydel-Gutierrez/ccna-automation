@@ -1,0 +1,11 @@
+.venv/
+.venv-wsl/
+labs/.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.terraform/
+*.tfstate
+*.tfstate.backup
+.DS_Store
+Thumbs.db

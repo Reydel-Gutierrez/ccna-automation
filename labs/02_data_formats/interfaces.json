@@ -1,0 +1,22 @@
+{
+  "interfaces": [
+    {
+      "name": "GigabitEthernet1",
+      "description": "Management",
+      "enabled": true,
+      "ipv4": {
+        "address": "10.10.20.48",
+        "prefix": 24
+      }
+    },
+    {
+      "name": "Loopback0",
+      "description": "Router ID",
+      "enabled": true,
+      "ipv4": {
+        "address": "192.0.2.1",
+        "prefix": 32
+      }
+    }
+  ]
+}

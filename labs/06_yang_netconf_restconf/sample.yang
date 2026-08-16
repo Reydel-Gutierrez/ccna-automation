@@ -1,0 +1,44 @@
+module ietf-interfaces {
+  yang-version 1.1;
+  namespace "urn:ietf:params:xml:ns:yang:ietf-interfaces";
+  prefix if;
+
+  organization "IETF NETMOD Working Group";
+  description
+    "Minimal excerpt for CCNA Automation study. Real IETF modules are
+     much larger. Focus on container / list / leaf / key / config.";
+
+  container interfaces {
+    description "Interface configuration.";
+    list interface {
+      key "name";
+      leaf name {
+        type string;
+        description "Interface name, for example GigabitEthernet1.";
+      }
+      leaf description {
+        type string;
+      }
+      leaf enabled {
+        type boolean;
+        default "true";
+      }
+    }
+  }
+
+  container interfaces-state {
+    config false;
+    description "Operational (read-only) interface state.";
+    list interface {
+      key "name";
+      leaf name { type string; }
+      leaf oper-status {
+        type enumeration {
+          enum up;
+          enum down;
+          enum testing;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Example unified diff (exam 5.12)
+# - lines were removed; + lines were added; space prefix means unchanged.
+# Headers name the files and hunk location (@@ -start,count +start,count @@).
+
+--- a/hostname.py
++++ b/hostname.py
+@@ -1,6 +1,7 @@
+ import requests
+ 
+-url = "https://router/restconf/data/Cisco-IOS-XE-native:native/hostname"
++HOST = "https://router"
++url = f"{HOST}/restconf/data/Cisco-IOS-XE-native:native/hostname"
+ response = requests.get(url, auth=("admin", "admin"), verify=False)
+ print(response.json())
