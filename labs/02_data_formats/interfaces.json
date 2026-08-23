@@ -18,5 +18,17 @@
         "prefix": 32
       }
     }
+  ],
+
+  "cars": [
+    {
+      "brand": "BMW",
+      "body_style": "SUV",
+      "tag": "60BLIA",
+      "previous_owners": {
+        "owner1": "Rolando Po",
+        "owner2": "Alberto Guti"
+      }
+    }
   ]
 }
