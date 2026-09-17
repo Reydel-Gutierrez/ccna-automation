@@ -1,0 +1,4 @@
+<device name="CORE-RTR-01">
+    <OS>IOS XE</OS>
+    <Location>Miami HQ</Location>
+</device>

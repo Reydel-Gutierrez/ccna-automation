@@ -1,0 +1,412 @@
+# University of Helsinki Python → CCNA Automation Plan
+
+## PHASE 1 — INTRODUCTION TO PROGRAMMING
+
+**Goal:** Complete University of Helsinki **BSCS1001 — Introduction to Programming (5 ECTS)** and attempt the **September 5, 2026 exam**.
+
+**Primary rule:** DO THE PROGRAMMING EXERCISES. Do not just read the material or watch lectures.
+
+---
+
+## AUGUST 24 — PART 1
+
+Complete all sections:
+
+* Getting Started
+* Information from the User
+* More About Variables
+* Arithmetic Operations
+* Conditional Statements
+
+### I should understand:
+
+* `print()`
+* variables
+* strings
+* integers/floats
+* `input()`
+* converting data types
+* arithmetic
+* comparisons
+* `if / else`
+
+**Target exercises:** 80–100%
+
+---
+
+## AUGUST 25 — PART 2
+
+Complete:
+
+* Programming Terminology
+* More Conditionals
+* Combining Conditions
+* Simple Loops
+
+### I should understand:
+
+* expressions
+* statements
+* data types
+* Boolean values
+* `if / elif / else`
+* `and`
+* `or`
+* `not`
+* basic `while` loops
+
+**Target exercises:** 80–100%
+
+---
+
+## AUGUST 26 — PART 3
+
+Complete:
+
+* Loops with Conditions
+* Working with Strings
+* More Loops
+* Defining Functions
+
+### HIGH PRIORITY FOR CCNA AUTOMATION
+
+I should understand:
+
+```python
+while condition:
+    ...
+
+def function_name(parameter):
+    ...
+    
+return value
+```
+
+Be comfortable reading functions and understanding the difference between printing and returning something.
+
+**Target exercises:** 80–100%
+
+---
+
+## AUGUST 27–28 — PART 4
+
+This is an important section.
+
+Complete:
+
+* Visual Studio Code / Python / Debugging
+* More Functions
+* Lists
+* Definite Iteration
+* Print Statement Formatting
+* More Strings and Lists
+
+### VERY HIGH PRIORITY FOR CCNA AUTOMATION
+
+I should be comfortable with:
+
+```python
+devices = ["router1", "router2", "switch1"]
+
+for device in devices:
+    print(device)
+```
+
+Understand:
+
+* lists
+* indexing
+* `for` loops
+* iterating through lists
+* functions
+* parameters
+* return values
+* debugging
+* string manipulation
+
+**Target exercises:** 80–100%
+
+---
+
+## AUGUST 29–30 — PART 5
+
+Complete:
+
+* More Lists
+* References
+* Dictionary
+* Tuple
+
+### EXTREMELY IMPORTANT FOR CCNA AUTOMATION
+
+Spend extra time on **dictionaries**.
+
+I should understand something like:
+
+```python
+device = {
+    "hostname": "R1",
+    "ip": "192.168.1.1",
+    "reachable": True
+}
+
+print(device["hostname"])
+```
+
+And:
+
+```python
+devices = [
+    {"hostname": "R1", "ip": "10.0.0.1"},
+    {"hostname": "R2", "ip": "10.0.0.2"}
+]
+
+for device in devices:
+    print(device["hostname"])
+```
+
+This will become extremely important when working with JSON and APIs in CCNA Automation.
+
+**Target exercises:** 80–100%
+
+---
+
+## AUGUST 31 — PART 6
+
+Complete:
+
+* Reading Files
+* Writing Files
+* Handling Errors
+* Local and Global Variables
+
+### HIGH PRIORITY
+
+Especially understand:
+
+```python
+try:
+    ...
+except:
+    ...
+```
+
+Know conceptually:
+
+* opening files
+* reading files
+* writing files
+* exceptions
+* error handling
+* variable scope
+
+Don't obsess over advanced file manipulation.
+
+**Target exercises:** 75–100%
+
+---
+
+## SEPTEMBER 1–2 — PART 7
+
+Complete:
+
+* Modules
+* Randomness
+* Times and Dates
+* Data Processing
+* Creating Your Own Modules
+* More Python Features
+
+### PRIORITY ORDER
+
+**Highest:**
+
+* Modules
+* Data Processing
+* importing modules
+
+**Medium:**
+
+* Creating your own modules
+* More Python features
+
+**Lower CCNAAUTO priority:**
+
+* Randomness
+* Times and dates
+
+Still complete exercises because they contribute toward the university course grade.
+
+I should understand:
+
+```python
+import json
+import math
+```
+
+and understand how Python can process structured data.
+
+---
+
+# SEPTEMBER 3 — REVIEW DAY
+
+NO NEW MATERIAL.
+
+Review:
+
+1. Variables and data types
+2. `if / elif / else`
+3. `for`
+4. `while`
+5. Strings
+6. Lists
+7. Dictionaries
+8. Tuples
+9. Functions
+10. Parameters
+11. `return`
+12. Files
+13. `try / except`
+14. Modules
+15. Data processing
+
+Write small programs WITHOUT copying course solutions.
+
+---
+
+# SEPTEMBER 4 — PRACTICE DAY
+
+Focus entirely on exercises that were difficult.
+
+I should be able to write programs using combinations of:
+
+```python
+if
+for
+while
+list
+dictionary
+function
+return
+try/except
+```
+
+Do not cram late into the night.
+
+---
+
+# SEPTEMBER 5 — EXAM
+
+Take:
+
+**University of Helsinki
+BSCS1001 — Introduction to Programming**
+
+Exam duration: maximum **4 hours**.
+
+The exam is programming-based.
+
+### Important requirements
+
+Before exam day:
+
+* Parts 1–7 completed
+* At least 25% exercise points in EVERY part
+* Preferably 80%+ exercise completion overall
+* Able to solve exercises independently
+
+To pass the course:
+
+* At least 25% exercise points from every Part 1–7
+* At least 50% on the exam
+* Combined course score at least 50%
+
+Exercises = **50% of final grade**
+
+Exam = **50% of final grade**
+
+### Grade target
+
+Aim for:
+
+**80%+ overall = Grade 4 (Very Good)**
+
+Don't chase Grade 5 at the expense of CCNA Automation.
+
+---
+
+# AFTER PASSING
+
+Obtain:
+
+**University of Helsinki — Introduction to Programming (BSCS1001)**
+**5 ECTS**
+
+Download the completion certificate.
+
+Register the completion through the University of Helsinki Open University process so that the credits are recorded in the University's study register.
+
+---
+
+# PHASE 2 — DO NOT START YET
+
+The website also contains:
+
+**BSCS1002 — Advanced Course in Programming — 5 ECTS**
+
+Parts 8–14.
+
+It covers substantially more advanced Python/software development.
+
+DO NOT begin this immediately.
+
+Return to:
+
+## CCNA Automation 200-901
+
+Primary learning:
+
+**Udemy CCNAAUTO course**
+
+*
+
+**Cisco DevNet labs**
+
+Use the large CCNAAUTO study guide as a **reference**, not something that must be read front-to-back.
+
+---
+
+# LATER DECISION
+
+After CCNAAUTO, consider returning to Helsinki for:
+
+**Advanced Course in Programming (BSCS1002) — 5 ECTS**
+
+Parts 8–14.
+
+That would potentially give:
+
+**Introduction to Programming — 5 ECTS**
+**Advanced Course in Programming — 5 ECTS**
+
+**Total: 10 ECTS of University of Helsinki programming coursework**
+
+But CCNAAUTO comes first.
+
+---
+
+# RULE FOR THE NEXT 12 DAYS
+
+I am NOT studying:
+
+* CCNAAUTO textbook for hours
+* another Python course
+* SoloLearn
+* random YouTube Python tutorials
+* multiple Udemy courses
+
+I AM studying:
+
+**University of Helsinki Python Parts 1–7 + exercises.**
+
+When I finish Part 7 and the exam, I transition immediately into applied Python/network automation through CCNAAUTO.

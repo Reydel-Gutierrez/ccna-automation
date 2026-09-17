@@ -1,0 +1,22 @@
+---
+- name: Get Cisco interfaces
+  hosts: cisco_router
+  gather_facts: false
+
+  tasks:
+    - name: Request interface information
+      ansible.builtin.uri:
+        url: "https://{{ ansible_host }}/restconf/data/ietf-interfaces:interfaces"
+        method: GET
+        user: "{{ ansible_user }}"
+        password: "{{ ansible_password }}"
+        force_basic_auth: true
+        validate_certs: false
+        headers:
+          Accept: "application/yang-data+json"
+        return_content: true
+      register: response
+
+    - name: Show response
+      ansible.builtin.debug:
+        var: response.json

@@ -1,0 +1,26 @@
+{
+  "DC-MIAMI": {
+    "active": true,
+    "vlans": [
+      {
+        "id": 10,
+        "name": "SERVERS",
+        "subnets": ["10.10.10.0/24", "10.10.11.0/24"]
+      },
+      {
+        "id": 20,
+        "name": "USERS",
+        "subnets": ["10.20.20.0/24"]
+      },
+      {
+        "id": 30,
+        "name": "GUEST",
+        "subnets": []
+      }
+    ],
+    "management": {
+      "protocols": ["SSH", "HTTPS"],
+      "port": 443
+    }
+  }
+}

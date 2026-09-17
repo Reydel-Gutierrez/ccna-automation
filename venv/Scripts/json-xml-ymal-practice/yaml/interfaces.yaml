@@ -1,0 +1,42 @@
+CORE-RTR-01:
+  DNS:
+    - 8.8.8.8
+    - 1.1.1.1
+
+  Device_Information:
+    ssh: true
+    NETCONF: true
+    RESTCONF: true
+    Telnet: false
+    Location: Miami HQ
+    Platform: Cisco Catalyst 8000
+    OS: IOS XE
+    Version: 17.12.4
+
+  interfaces:
+    - name: GigabitEthernet1
+      description: WAN Uplink
+      enabled: true
+      IP_address: 203.0.113.10
+      subnet_mask: 255.255.255.252
+      speed: 1000
+      protocols:
+        - IPv4
+
+    - name: GigabitEthernet2
+      description: LAN Users
+      enabled: true
+      IP_address: 10.10.20.1
+      subnet_mask: 255.255.255.0
+      speed: 1000
+      protocols:
+        - IPv4
+        - IPv6
+
+    - name: GigabitEthernet3
+      description: Unused
+      enabled: false
+      IP_address: null
+      subnet_mask: null
+      speed: 1000
+      protocols: []
